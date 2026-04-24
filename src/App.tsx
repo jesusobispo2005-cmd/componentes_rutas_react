@@ -1,21 +1,16 @@
-import { useState } from "react";
-import Form from "./components/forms/Form";
-import Hermano from "./components/hermano/hermano";
+import { Link, Outlet } from "react-router";
 
 function App() {
-  const [numero, setNumero] = useState<number>(0);
-  const titulo = "Jesus";
+
   return (
     <>
     <nav>
-      
-    </nav>
-      <h1>Titulo</h1>
-      <Form nombre={titulo} />
-      <button>Enviar</button>
-      <h1>contador: {numero}</h1>
-      <Hermano numeros={numero} titulo={titulo} setNumero={setNumero} />
+      <Link to="/contact" >Contactanos</Link><br></br><br></br>
 
+      <Link to="/hijo" >Hijo</Link>
+    </nav>
+      
+      <Outlet /> 
     </>
   );
 }

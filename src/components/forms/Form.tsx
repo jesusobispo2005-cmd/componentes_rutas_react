@@ -1,19 +1,18 @@
-import React from 'react';
-import './form.css'
+import "./form.css";
 
 
 
-function Form({nombre}: {nombre: any}) {
+function Form({nombre}:{nombre:any}) {
   return (
     <>
-    <div className='formulario'>
+      <div className={"formulario"}>
         <h2>{nombre}</h2>
         <form action="">
-            <input type="text" />
-            <input type="text" />
-            <input type="submit" value="submit"/>
+          <input type="text" />
+          <input type="text" />
+          <input type="submit" value="submit" />
         </form>
-    </div>
+      </div>
     </>
   );
 }
